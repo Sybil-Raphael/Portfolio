@@ -64,7 +64,7 @@ section:not(#home) > * {
   background-position: center; /* Center the image */
   border-radius: 8px;          /* Rounded corners */
   color: #3e2723;              /* Dark brown text for readability */
-  min-height: 1000px;           /* Height of the banner */
+  min-height: 360px;           /* Height of the banner */
   max-width: 3500px;            /* Match the nav and other sections */
   margin-left: auto;
   margin-right: auto;
