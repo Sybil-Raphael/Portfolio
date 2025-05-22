@@ -3,9 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <title>My Personal Site</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navigation menu -->
+  <nav>
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about me</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#additional">additional links</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home section -->
+  <section id="home">
+    <h1>Sybil Raphael</h1>
+    <p>
+      hello !
+    </p>
+  </section>
+
+  <!-- About Me section -->
+  <section id="about">
+    <h2>about me</h2>
+    <p>I am currently a student pursuing my B.S. in Computer Science along with a Certificate in Cybersecurity and Secure Computing. I am a diligent and determined worker seeking internship opportunities where I can apply and grow my skills in a collaborative environment. I’m committed to continuous learning and bring strong communication skills and teamwork experience. Outside of academics, I enjoy biking, swimming, painting, and watching movies. I’m always up for trying new activities, exploring new places to eat, and I love to travel.</p>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <h2>skills</h2>
+    <!-- Beginner-friendly: Show skills side by side using a simple container and inline-block -->
+    <div class="skills-row">
+      <div class="skill-item">
+        <!-- HTML icon using an image -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo" style="width:40px; vertical-align:middle;">
+        <div>HTML</div>
+      </div>
+      <div class="skill-item">
+        <!-- CSS icon using an image -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 logo" style="width:40px; vertical-align:middle;">
+        <div>CSS</div>
+      </div>
+      <div class="skill-item">
+        <!-- JavaScript icon using an image -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo" style="width:40px; vertical-align:middle;">
+        <div>JavaScript</div>
+      </div>
+      <div class="skill-item">
+        <!-- Python icon using an image -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python logo" style="width:40px; vertical-align:middle;">
+        <div>Python</div>
+      </div>
+      <div class="skill-item">
+        <!-- C++ icon using an image -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ logo" style="width:40px; vertical-align:middle;">
+        <div>C++</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects">
+    <h2>projects</h2>
+    <div class="projects-row">
+      <!-- Each project is in its own card -->
+      <div class="project-item">
+        <p>
+          <strong>Movie App</strong><br>
+          a fun app to browse and review movies.<br>
+          |<br>
+          <a href="https://csc3916-react19-zcj0.onrender.com/" target="_blank">demo</a>
+        </p>
+      </div>
+      <div class="project-item">
+        <p>
+          <strong>The Weather Channel</strong><br>
+          check the weather in any city, anytime.<br>
+          |<br>
+          <a href="https://csci3916-project-frontend.onrender.com/" target="_blank">demo</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Links Section -->
+  <section id="additional">
+    <h2>additional links</h2>
+    <!-- Beginner-friendly: Show links side by side using inline-block -->
+    <ul style="text-align: center; padding-left: 0;">
+      <li style="display: inline-block; margin: 0 15px;">
+        <!-- GitHub link with icon -->
+        <a href="https://github.com/Sybil-Raphael" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub icon" style="width:20px; vertical-align:middle;">
+          GitHub
+        </a>
+      </li>
+      <li style="display: inline-block; margin: 0 15px;">
+        <!-- LinkedIn link with icon -->
+        <a href="https://www.linkedin.com/in/sybil-raphael" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn icon" style="width:20px; vertical-align:middle;">
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- Contact Me Banner at the bottom as a footer -->
+  <footer class="contact-banner">
+    <!-- Beginner-friendly: Simple contact info at the bottom of the page -->
+    contact me: 
+    <a href="mailto:sybil.raphael@ucdenver.edu">sybil.raphael@ucdenver.edu</a> | 
+    <a href="tel:7203459058">720-345-9058</a>
+  </footer>
 </body>
 </html>

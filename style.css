@@ -1,1 +1,168 @@
-/* Add you CSS here */
+/* Basic styles for the website */
+
+/* Style the navigation menu */
+nav {
+  background-color: #8d6748; /* Light brown background */
+  padding: 10px 0; /* Space above and below */
+}
+
+/* Style the navigation links */
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center the links */
+}
+
+nav ul li {
+  display: inline; /* Display links in a row */
+  margin: 0 15px; /* Space between links */
+}
+
+nav ul li a {
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+}
+
+/* Add some space around each section */
+section {
+  margin: 0 auto;           /* No space above or below sections */
+  max-width: 600px;         /* Limit width for readability */
+  padding: 20px;
+  background-color: #f5e9da; /* Light tan background */
+  /* No border-radius or box-shadow for a flat look */
+}
+
+/* Use the background color as the section background, not as a box, for all sections except #home */
+
+/* Section styles for about, skills, projects, and additional links */
+section:not(#home) {
+  margin: 0;                  /* No space above or below sections */
+  max-width: none;            /* Let the section fill the page width */
+  padding: 40px 0;            /* Top and bottom padding for space, no side padding */
+  background-color: #f5e9da;  /* Light tan background for the whole section */
+  border-radius: 0;           /* No rounded corners */
+  box-shadow: none;           /* No shadow */
+}
+
+/* Optional: Center the content inside each section */
+section:not(#home) > * {
+  max-width: 600px;           /* Limit content width for readability */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;         /* Center text and items */
+}
+
+/* Home section with a neutral background color and a background image */
+/* Beginner-friendly: only affects the #home section */
+#home {
+  margin-top: 0; /* No space above the home section */
+  background-color: #f5e9da; /* neutralBack: a light tan color */
+  background-image: url('img/bow.png'); /* Your banner image */
+  background-size: cover;      /* Make the image cover the section */
+  background-position: center; /* Center the image */
+  border-radius: 8px;          /* Rounded corners */
+  color: #3e2723;              /* Dark brown text for readability */
+  min-height: 1000px;           /* Height of the banner */
+  max-width: 3500px;            /* Match the nav and other sections */
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;      /* Include padding and border in the width */
+  display: flex;               /* Center content vertically and horizontally */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the main headings */
+h1, h2 {
+  color: #3e2723; /* Dark brown text */
+  text-align: center;
+}
+
+/* Style the skills and projects lists */
+ul {
+  padding-left: 20px;
+}
+
+/* Beginner-friendly: Show skills side by side */
+.skills-row {
+  text-align: center; /* Center the row */
+}
+
+.skill-item {
+  display: inline-block; /* Place items side by side */
+  margin: 10px 15px;     /* Space between items */
+}
+
+/* Beginner-friendly: Show projects side by side using inline-block */
+.projects-row {
+  text-align: center;      /* Center the row */
+  width: 100%;             /* Allow the row to use full width */
+  max-width: none;         /* Remove any max-width restriction */
+  display: block;          /* Ensure it's a block-level container */
+  margin: 0 auto;          /* Center the row in the section */
+  padding: 0;              /* Remove extra padding */
+}
+
+/* Each project card */
+.project-item {
+  display: inline-block;           /* Place items side by side */
+  background-color: #f5e9da;       /* Match your neutral tan background */
+  border: 2px solid #8d6748;       /* Brown border for definition */
+  border-radius: 8px;              /* Rounded corners */
+  color: #3e2723;                  /* Dark brown text for readability */
+  margin: 10px 20px;               /* Space between cards */
+  padding: 20px 30px;              /* Space inside each card */
+  min-width: 220px;                /* Minimum width for each card */
+  max-width: 300px;                /* Maximum width for each card */
+  vertical-align: top;             /* Align cards to the top */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Soft shadow for subtle depth */
+}
+
+/* Project title links */
+.project-item a {
+  color: #3e2723;                  /* Dark brown for links */
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* On hover, underline the link */
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+/* Project description text */
+.project-item p {
+  color: #222;                     /* Almost black for easy reading */
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Optional: Style the github/demo links inside the card */
+.project-item p a {
+  color: #8d6748;                  /* Brown for sub-links */
+  font-weight: normal;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
+/* Contact banner at the bottom of the page */
+/* Beginner-friendly: Make the contact banner the same height as the nav bar */
+.contact-banner {
+  background-color: #8d6748; /* Light brown background */
+  color: #fff;               /* White text */
+  text-align: center;        /* Center the text */
+  padding: 10px 0;           /* Match the nav bar's padding for height */
+  font-size: 1.1em;
+  z-index: 100;
+}
+
+.contact-banner a {
+  color: #fff;               /* White links */
+  text-decoration: underline;
+  margin: 0 8px;
+}
