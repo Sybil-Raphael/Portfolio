@@ -98,27 +98,26 @@ ul {
 
 /* Beginner-friendly: Show projects side by side using inline-block */
 .projects-row {
-  text-align: center;      /* Center the row */
-  width: 100%;             /* Allow the row to use full width */
-  max-width: none;         /* Remove any max-width restriction */
-  display: block;          /* Ensure it's a block-level container */
-  margin: 0 auto;          /* Center the row in the section */
-  padding: 0;              /* Remove extra padding */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px; /* spacing between cards */
+  padding: 20px 0;
 }
 
 /* Each project card */
 .project-item {
-  display: inline-block;           /* Place items side by side */
-  background-color: #f5e9da;       /* Match your neutral tan background */
-  border: 2px solid #8d6748;       /* Brown border for definition */
-  border-radius: 8px;              /* Rounded corners */
-  color: #3e2723;                  /* Dark brown text for readability */
-  margin: 10px 20px;               /* Space between cards */
-  padding: 20px 30px;              /* Space inside each card */
-  min-width: 220px;                /* Minimum width for each card */
-  max-width: 300px;                /* Maximum width for each card */
-  vertical-align: top;             /* Align cards to the top */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Soft shadow for subtle depth */
+  flex: 1 1 250px; /* grows, shrinks, starts at 250px */
+  max-width: 300px;
+  background-color: #f5e9da;
+  border: 2px solid #8d6748;
+  border-radius: 8px;
+  color: #3e2723;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  text-align: center;
 }
 
 /* Project title links */
@@ -165,4 +164,100 @@ ul {
   color: #fff;               /* White links */
   text-decoration: underline;
   margin: 0 8px;
+}
+
+/* Outer circle for profile image */
+.profile-pic-outer {
+  display: inline-block;
+  border: 4px solid #8d6748;   /* Outer border matches nav bar */
+  border-radius: 50%;          /* Make it a circle */
+  padding: 10px;               /* Space between circles */
+  background: #f5e9da;            /* White between circles */
+  margin: 40px auto 20px auto; /* Center with space above and below */
+}
+
+/* Inner circle (the image itself) */
+.profile-pic-inner {
+  display: block;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;          /* Make the image a circle */
+  border: 2px solid #8d6748;   /* Thinner inner border */
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* Improved project card styling */
+.project-item {
+  background-color: #d6bfa8;        /* New shade of brown */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+  font-size: 0.95em;
+  color: #3e2723;                   /* Dark brown text for contrast */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for project cards */
+.project-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the project titles inside cards */
+.project-item strong {
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+  color: #3e2723;
+}
+
+/* Adjust the demo link appearance */
+.project-item p a {
+  color: #5c4033;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-item p a:hover {
+  text-decoration: underline;
+}
+
+/* Beginner-friendly: Fun, circular icons for additional links matching your theme */
+
+/* Center the additional links section */
+#additional ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+/* Each additional link as a circle */
+#additional li {
+  display: inline-block;      /* Show links side by side */
+  margin: 0 18px;             /* Space between circles */
+}
+
+/* Style the link as a circle with your theme colors */
+#additional a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #e3c7b2;        /* Soft pink-tan background */
+  border-radius: 50%;         /* Make it a circle */
+  text-align: center;
+  line-height: 50px;          /* Center icon vertically */
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(141, 103, 72, 0.10); /* Soft brown shadow */
+  color: #5f4822;                /* White icon by default */
+  font-size: 1.0em;           /* Large icon */
+}
+
+/* Fun hover effect */
+#additional a:hover {
+  background: #d6bfa8;        /* Brown-tan on hover */
+  color: #8d6748;             /* Brown icon on hover */
+}
+
+/* Remove underline from links */
+#additional a:link,
+#additional a:visited {
+  text-decoration: none;
 }
